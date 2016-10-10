@@ -2959,7 +2959,7 @@ input, textarea, button {
 
 /* line 186, ../sass/style.scss */
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
-  color: #188738;
+  color: #188738 !important;
   text-align: center; }
 
 /* line 191, ../sass/style.scss */
@@ -3157,7 +3157,7 @@ h2 {
     width: 200px;
     position: relative;
     right: 0;
-    top: -15px;
+    top: -16px;
     text-align: center;
     float: right;
     -webkit-box-sizing: border-box;
@@ -3334,23 +3334,36 @@ h2 {
       /* line 582, ../sass/style.scss */
       .licenciamento .box-conteudo form button {
         clear: both; }
-    /* line 588, ../sass/style.scss */
+        /* line 585, ../sass/style.scss */
+        .licenciamento .box-conteudo form button span {
+          font-size: 12px;
+          color: #fbc10f;
+          position: relative;
+          top: -2px; }
+        /* line 592, ../sass/style.scss */
+        .licenciamento .box-conteudo form button i {
+          color: #fbc10f;
+          font-size: 17px; }
+        /* line 597, ../sass/style.scss */
+        .licenciamento .box-conteudo form button.carregando {
+          cursor: not-allowed; }
+    /* line 604, ../sass/style.scss */
     .licenciamento .box-conteudo input.mini, .licenciamento .box-conteudo button.mini {
       float: right; }
 
-/* line 596, ../sass/style.scss */
+/* line 612, ../sass/style.scss */
 .servicos .item-servicos {
   display: block;
   width: 100%;
   margin: 40px 0; }
-/* line 602, ../sass/style.scss */
+/* line 618, ../sass/style.scss */
 .servicos .servicos-pagpar {
   display: inline-block;
   color: #94b532;
   font-size: 18px;
   text-align: center;
   margin: 0 30px; }
-  /* line 609, ../sass/style.scss */
+  /* line 625, ../sass/style.scss */
   .servicos .servicos-pagpar .img-servico {
     border: 1px solid #94b532;
     padding: 50px;
@@ -3359,71 +3372,71 @@ h2 {
     margin-bottom: 20px;
     width: 183px;
     height: 169px; }
-    /* line 618, ../sass/style.scss */
+    /* line 634, ../sass/style.scss */
     .servicos .servicos-pagpar .img-servico img {
       display: block;
       width: 83px;
       height: 69px; }
-  /* line 625, ../sass/style.scss */
+  /* line 641, ../sass/style.scss */
   .servicos .servicos-pagpar:hover {
     color: #fbc10f; }
-    /* line 627, ../sass/style.scss */
+    /* line 643, ../sass/style.scss */
     .servicos .servicos-pagpar:hover .img-servico {
       border-color: #fbc10f; }
 
-/* line 634, ../sass/style.scss */
+/* line 650, ../sass/style.scss */
 .depoimentos {
   position: relative; }
-  /* line 637, ../sass/style.scss */
+  /* line 653, ../sass/style.scss */
   .depoimentos .container {
     position: relative;
     padding: 0 97px;
     background: url("../images/bg-depoimentos.png") no-repeat top center #fbc10f;
     padding-top: 20px;
     max-width: 1294px; }
-  /* line 645, ../sass/style.scss */
+  /* line 661, ../sass/style.scss */
   .depoimentos h2.destaque {
     background: none;
     margin: 0 0 30px;
     width: 100%;
     padding: 0; }
-    /* line 651, ../sass/style.scss */
+    /* line 667, ../sass/style.scss */
     .depoimentos h2.destaque span {
       border-color: #f0f2ea;
       padding: 10px 80px;
       display: inline-block; }
-  /* line 658, ../sass/style.scss */
+  /* line 674, ../sass/style.scss */
   .depoimentos .carousel {
     height: 160px;
     overflow: hidden; }
-  /* line 663, ../sass/style.scss */
+  /* line 679, ../sass/style.scss */
   .depoimentos .bx-wrapper {
     z-index: 200;
     position: relative; }
-  /* line 668, ../sass/style.scss */
+  /* line 684, ../sass/style.scss */
   .depoimentos .item {
     background-size: cover;
     height: 160px !important;
     display: table; }
-    /* line 673, ../sass/style.scss */
+    /* line 689, ../sass/style.scss */
     .depoimentos .item img, .depoimentos .item .conteudo-depoimento {
       display: table-cell;
       vertical-align: middle; }
-    /* line 678, ../sass/style.scss */
+    /* line 694, ../sass/style.scss */
     .depoimentos .item img {
       width: 147px;
       height: 147px;
       border-radius: 50%; }
-    /* line 684, ../sass/style.scss */
+    /* line 700, ../sass/style.scss */
     .depoimentos .item .conteudo-depoimento {
       padding-left: 10px;
       font-size: 16px; }
-      /* line 688, ../sass/style.scss */
+      /* line 704, ../sass/style.scss */
       .depoimentos .item .conteudo-depoimento strong {
         font-size: 18px;
         padding-bottom: 10px;
         color: #188738; }
-  /* line 696, ../sass/style.scss */
+  /* line 712, ../sass/style.scss */
   .depoimentos .controle-slide {
     position: absolute;
     top: 0;
@@ -3434,7 +3447,7 @@ h2 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    /* line 705, ../sass/style.scss */
+    /* line 721, ../sass/style.scss */
     .depoimentos .controle-slide:before, .depoimentos .controle-slide:after {
       content: '';
       position: absolute;
@@ -3443,17 +3456,17 @@ h2 {
       height: 320px;
       background-color: #ffeead;
       background-repeat: repeat-y; }
-    /* line 715, ../sass/style.scss */
+    /* line 731, ../sass/style.scss */
     .depoimentos .controle-slide:before {
       right: 0;
       background-position: top right;
       background-image: url("../images/shadow-right.png"); }
-    /* line 721, ../sass/style.scss */
+    /* line 737, ../sass/style.scss */
     .depoimentos .controle-slide:after {
       left: 0;
       background-position: top left;
       background-image: url("../images/shadow-left.png"); }
-    /* line 727, ../sass/style.scss */
+    /* line 743, ../sass/style.scss */
     .depoimentos .controle-slide span {
       height: 320px;
       width: 55px;
@@ -3466,34 +3479,34 @@ h2 {
       -moz-transition: all 0.2s ease 0s;
       -webkit-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s; }
-      /* line 738, ../sass/style.scss */
+      /* line 754, ../sass/style.scss */
       .depoimentos .controle-slide span a {
         display: block;
         text-indent: -10000px;
         height: 100%; }
-      /* line 744, ../sass/style.scss */
+      /* line 760, ../sass/style.scss */
       .depoimentos .controle-slide span:hover {
         background-color: #ffffff; }
-      /* line 748, ../sass/style.scss */
+      /* line 764, ../sass/style.scss */
       .depoimentos .controle-slide span.left {
         left: 0;
         float: left;
         background-image: url("../images/seta-slide-left.png"); }
-      /* line 754, ../sass/style.scss */
+      /* line 770, ../sass/style.scss */
       .depoimentos .controle-slide span.right {
         float: right;
         right: 0;
         background-image: url("../images/seta-slide-right.png"); }
-  /* line 762, ../sass/style.scss */
+  /* line 778, ../sass/style.scss */
   .depoimentos .bx-pager {
     width: 100%;
     text-align: center;
     margin: 30px 0 15px; }
-    /* line 767, ../sass/style.scss */
+    /* line 783, ../sass/style.scss */
     .depoimentos .bx-pager .bx-pager-item {
       display: inline-block;
       padding: 0 5px; }
-      /* line 771, ../sass/style.scss */
+      /* line 787, ../sass/style.scss */
       .depoimentos .bx-pager .bx-pager-item a {
         display: block;
         text-indent: -10000px;
@@ -3504,70 +3517,70 @@ h2 {
         -moz-transition: all 0.2s ease 0s;
         -webkit-transition: all 0.2s ease 0s;
         -o-transition: all 0.2s ease 0s; }
-        /* line 780, ../sass/style.scss */
+        /* line 796, ../sass/style.scss */
         .depoimentos .bx-pager .bx-pager-item a:not(.active) {
           opacity: .5; }
 
-/* line 790, ../sass/style.scss */
+/* line 806, ../sass/style.scss */
 .content.bg-cor.cor1 {
   background-color: #f0f2ea; }
-/* line 794, ../sass/style.scss */
+/* line 810, ../sass/style.scss */
 .content.bg-cor.cor2 {
   background-color: #ffeead; }
 
 /* FOOTER */
-/* line 803, ../sass/style.scss */
+/* line 819, ../sass/style.scss */
 .footer-add {
   padding: 50px 0; }
-  /* line 806, ../sass/style.scss */
+  /* line 822, ../sass/style.scss */
   .footer-add h2 {
     margin-bottom: 15px; }
-  /* line 811, ../sass/style.scss */
+  /* line 827, ../sass/style.scss */
   .footer-add ul li {
     padding: 5px 0;
     display: block; }
-    /* line 815, ../sass/style.scss */
+    /* line 831, ../sass/style.scss */
     .footer-add ul li img {
       vertical-align: middle;
       padding-right: 15px; }
-    /* line 820, ../sass/style.scss */
+    /* line 836, ../sass/style.scss */
     .footer-add ul li a {
       -moz-transition: all 0.2s ease 0s;
       -webkit-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s; }
-      /* line 822, ../sass/style.scss */
+      /* line 838, ../sass/style.scss */
       .footer-add ul li a:hover {
         color: #188738;
         text-decoration: underline; }
-  /* line 830, ../sass/style.scss */
+  /* line 846, ../sass/style.scss */
   .footer-add .pagamento {
     text-align: center;
     margin-top: 40px; }
-    /* line 834, ../sass/style.scss */
+    /* line 850, ../sass/style.scss */
     .footer-add .pagamento .tit-pag, .footer-add .pagamento img {
       display: inline-block; }
-    /* line 838, ../sass/style.scss */
+    /* line 854, ../sass/style.scss */
     .footer-add .pagamento .tit-pag {
       font-size: 14px;
       color: #188738;
       font-weight: bold; }
-    /* line 844, ../sass/style.scss */
+    /* line 860, ../sass/style.scss */
     .footer-add .pagamento img {
       padding-left: 20px;
       vertical-align: middle; }
 
-/* line 851, ../sass/style.scss */
+/* line 867, ../sass/style.scss */
 .footer {
   background-color: #f0f2ea;
   width: 100%;
   padding: 15px 0; }
-  /* line 856, ../sass/style.scss */
+  /* line 872, ../sass/style.scss */
   .footer a {
     display: inline-block; }
-    /* line 858, ../sass/style.scss */
+    /* line 874, ../sass/style.scss */
     .footer a img {
       vertical-align: middle; }
-  /* line 863, ../sass/style.scss */
+  /* line 879, ../sass/style.scss */
   .footer p {
     display: inline-block;
     color: #58595b;

@@ -8,7 +8,7 @@
 		<a class="left" href="#slide" role="button" data-slide="prev"></a>
 		<a class="right" href="#slide" role="button" data-slide="next"></a>
 	</div>
-	<div class="carousel slide" data-ride="carousel" id="slide">
+	<div class="carousel slide" data-ride="carousel" data-interval="10000" id="slide">
 		<div class="carousel-inner" role="listbox">
 			<div class="item active" style="background-image: url('assets/images/slide1.jpg');"></div>
 			<div class="item" style="background-image: url('assets/images/slide2.jpg');"></div>
@@ -29,7 +29,7 @@
 				<input type="text" placeholder="Nome">
 				<input type="text" placeholder="E-mail">
 				<input type="text" class="mini" placeholder="Placa">
-				<button class="mini">LICENCIAR</button>
+				<button class="mini" id="licenciar">LICENCIAR</button>
 			</form>
 		</div>
 	</div>
@@ -111,5 +111,13 @@
 			autoStart: true,
 			responsive: true
 		});
+	});
+
+	jQuery('#licenciar').click(function(){
+		jQuery(this).addClass('carregando').html('<i class="fa fa-refresh fa-spin fa-3x fa-fw margin-bottom" aria-hidden="true"></i> <span>aguarde...</span>').prop("disabled",true);
+		setTimeout(function(){
+			jQuery('#licenciar').prop("disabled",false).html('LICENCIAR').removeClass('carregando');
+			window.location.replace("app/consulta");
+		}, 4000);
 	});
 </script>

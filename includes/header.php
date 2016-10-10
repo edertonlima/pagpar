@@ -21,7 +21,7 @@
 			<span href="javascript:" class="menu-mobile"><span></span></span>
 		</nav>
 
-		<form action="javascript:" class="acompanhe">
+		<form action="app/" class="acompanhe">
 			<h2>ACOMPANHAR PEDIDO</h2>
 			<input type="text" placeholder="Nome de Usuário">
 			<input type="password" placeholder="Senha">

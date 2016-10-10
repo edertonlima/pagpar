@@ -184,7 +184,7 @@ input, textarea, button {
 }
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {  
-	color: $cor1;
+	color: $cor1!important;
 	text-align: center;
 }
 
@@ -385,7 +385,7 @@ h2 {
 		width: 200px;
 		position: relative;
 		right: 0;
-		top: -15px;
+		top: -16px;
 		text-align: center;
 		float: right;
 		@include box-sizing();
@@ -581,6 +581,22 @@ h2 {
 
 			button {
 				clear: both;
+
+				span {
+					font-size: 12px;
+					color: $cor2;
+					position: relative;
+					top: -2px;
+				}
+
+				i {
+					color: $cor2;
+					font-size: 17px;
+				}
+
+				&.carregando {
+					cursor:not-allowed;
+				}
 			}
 		}
 
